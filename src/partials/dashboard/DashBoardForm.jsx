@@ -265,6 +265,9 @@ function DashBoardForm() {
             transition={{ duration: 0.3 }}
             className="md:w-3/5 mx-auto py-12"
           >
+            <h1 className="font-bold w-full text-2xl text-center">
+              Thank you {formData.name}
+            </h1>
             <div className="mt-12 text-base  text-center">
               Your submission has been received! We will aim to get back to you
               within 3 working days.
