@@ -6,6 +6,8 @@ import Help from "../components/DropdownHelp";
 import UserMenu from "../components/DropdownProfile";
 import ThemeToggle from "../components/ThemeToggle";
 
+import gitHubImage from "../images/github-mark.png";
+
 function Header({ sidebarOpen, setSidebarOpen }) {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
@@ -77,6 +79,21 @@ function Header({ sidebarOpen, setSidebarOpen }) {
             <Notifications align="right" />
             <Help align="right" />
             <ThemeToggle />
+
+            <div className="">
+              <a
+                className="hover:bg-gray-50 opacity-100"
+                href="https://github.com/yousufsadikot/Yousuf-Sadikot-UI-Dashboard"
+                target="blank"
+              >
+                {" "}
+                <img
+                  src={gitHubImage}
+                  alt="Git Hub"
+                  style={{ width: "30px" }}
+                />
+              </a>
+            </div>
             {/*  Divider */}
           </div>
         </div>
